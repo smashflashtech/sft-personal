@@ -294,16 +294,12 @@ div.pause, .play, .dark-light-mode{
 }
 
 .freepik{
+  filter: invert(0);
 }
 
 .flaticon{
+  filter: invert(0);
 }
-
-/* .footer{
-  filter:invert(0);
-  padding: 2rem 0 1rem 0;
-  text-align: center;
-} */
 
 .credit-container{
   align-self: flex-end;
