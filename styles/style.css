@@ -404,7 +404,6 @@ div.tech-container{
   align-items: center;
   font-size: 1.6rem;
   font-family: 'Unica One', cursive;
-  /* font-family: 'Ubuntu', sans-serif; */
 }
 
 /* Projects - body */
@@ -516,12 +515,12 @@ div.c-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 5px;
 }
 
 .c-img{
   max-width: 95%;
   max-height: 95%;
-  margin: 5px
 }
 
 .c-label{
@@ -535,7 +534,6 @@ div.c-container{
   align-items: center;
   font-size: 1.6rem;
   font-family: 'Unica One', cursive;
-  /* font-family: 'Ubuntu', sans-serif; */
 }
 
 
