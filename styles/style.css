@@ -481,16 +481,17 @@ div.tech-container{
 
 /* Contacts - Body */
 
-div.contact-container{
+div.c-container{
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding: 2%;
   margin: 0;
+  height: 100vh;
 }
 
 .contactInfo{
-  margin: 0;
+  margin: 5% 0 0 0;
   max-width: 520px;
   display: flex;
   flex-wrap: wrap;
