@@ -36,7 +36,6 @@ const toggleHamburger = (x) => {
     document.getElementById('nav').style.height = "0vh"
     document.getElementById('nlinks').style.display = "none"
   }
-
 }
 
 
