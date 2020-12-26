@@ -325,15 +325,64 @@ div.pause, .play, .dark-light-mode{
 
 .gaLogo {
   width: 25vw;
+  max-width: 200px;
   float: left;
   padding: 2% 2% 0 8%;
 }
 
+div.tech-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  margin: 0;
+}
+
 .technologies{
-  margin: 1% 16%;
-  border:5px double rgba(0, 0, 0, 0.276);
-  border-radius: 5px;
+  margin: 0;
+  max-width: 575px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.ti{
+  margin: 5px;
+  width: 100px;
   height: 100px;
+  box-shadow: 3px 3px 5px #00000085;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.ti-icon{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ti-img{
+  max-width: 95%;
+  max-height: 95%;
+  margin: 5px
+}
+
+.ti-label{
+  width: 100%;
+  height: 25%;
+  background-color: black;
+  color: rgb(210, 210, 210);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: 'Unica One', cursive;
+  /* font-family: 'Ubuntu', sans-serif; */
 }
 
 /* footer */
@@ -374,6 +423,11 @@ span.credit-text{
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 674px) {
+  .technologies{
+    max-width: 335px;
+  }
+}
 
 @media screen and (max-width: 540px) {
   .welcome{
@@ -422,5 +476,7 @@ span.credit-text{
   }
   .myName{
     font-size:  2.4rem;
+  }  .technologies{
+    max-width: 225px;
   }
 }
