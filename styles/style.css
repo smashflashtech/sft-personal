@@ -471,6 +471,72 @@ div.tech-container{
   align-items: center;
 
 }
+
+
+
+
+
+
+
+
+/* Contacts - Body */
+
+div.contact-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+  margin: 0;
+}
+
+.contactInfo{
+  margin: 0;
+  max-width: 520px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact{
+  margin: 5px;
+  width: 250px;
+  height: 150px;
+  box-shadow: 3px 3px 5px #00000085;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.c-icon{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.c-img{
+  max-width: 95%;
+  max-height: 95%;
+  margin: 5px
+}
+
+.c-label{
+  width: 100%;
+  height: 25%;
+  background-color: black;
+  color: rgb(210, 210, 210);
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: 'Unica One', cursive;
+  /* font-family: 'Ubuntu', sans-serif; */
+}
+
+
+
 /* footer */
 .f-footer{
   margin: 5% 0 0 0;
@@ -526,7 +592,7 @@ span.credit-text{
 
 
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 541px) {
   .welcome{
     font-size: 2.4rem;
   }
@@ -543,6 +609,9 @@ span.credit-text{
   .myName{
     font-size:  3.6rem;
   }
+  .contactInfo{
+    max-width: 250px;
+  }  
 }
 
 @media screen and (max-width: 320px) {
