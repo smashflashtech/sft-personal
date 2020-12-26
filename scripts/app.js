@@ -30,11 +30,11 @@ const toggleHamburger = (x) => {
   if (toggleCheck === "closed") {
     document.getElementById('ham').setAttribute('value', 'opened')
     document.getElementById('nav').style.height = "100vh"
-    document.getElementById('nlinks').style.opacity = "1"
+    document.getElementById('nlinks').style.display = "inline-block"
   } else if (toggleCheck === "opened") {
     document.getElementById('ham').setAttribute('value', 'closed')
     document.getElementById('nav').style.height = "0vh"
-    document.getElementById('nlinks').style.opacity = "0"
+    document.getElementById('nlinks').style.display = "none"
   }
 
 }
