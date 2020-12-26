@@ -323,6 +323,10 @@ div.pause, .play, .dark-light-mode{
   text-align: left;
 }
 
+.am-link{
+  margin: 1% 0;
+}
+
 .gaLogo {
   width: 25vw;
   max-width: 200px;
@@ -387,6 +391,7 @@ div.tech-container{
 
 /* footer */
 .f-footer{
+  margin: 5% 0 0 0;
   text-align: center;
   background-color: black;
   height: 8rem;
