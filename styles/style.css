@@ -316,8 +316,15 @@ div.pause, .play, .dark-light-mode{
 
 /* ABOUT - Body */
 
+.am-body{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
 .am-meContainer{
-  margin: 5% 0 0 0;
+  margin: 5% auto 0 auto;
   text-align: center;
 }
 
@@ -340,6 +347,7 @@ div.pause, .play, .dark-light-mode{
 
 .am-meDetails{
   text-align: left;
+  max-width: 1500px;
 }
 
 .am-link{
@@ -350,7 +358,7 @@ div.pause, .play, .dark-light-mode{
   width: 25vw;
   max-width: 200px;
   float: left;
-  padding: 2% 2% 0 8%;
+  padding: 15px 15px 0 8%;
 }
 
 div.tech-container{
