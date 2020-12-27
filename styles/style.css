@@ -202,7 +202,7 @@ header{
   background-color:rgba(194, 0, 0, 0.75);
 }
 
-/* actual nav panel */
+/* overlay nav panel */
 #nav {
   background-color:rgba(0,0,0,.8);
   position:fixed;
@@ -254,6 +254,14 @@ a.nav-item:hover{
   color:rgb(193, 164, 52);
   position:relative;
   z-index:-94;
+}
+
+p.title{
+  font-size: 2.4rem;
+  color: rgb(57, 57, 57);
+  margin: 10px 0 -30px 0;
+  position: relative;
+  z-index: 89;
 }
 
 .video-container{
@@ -312,19 +320,9 @@ div.pause, .play, .dark-light-mode{
   filter: invert(0);
 }
 
-
-
 /* ABOUT - Body */
-
-.am-body{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-}
-
 .am-meContainer{
-  margin: 5% auto 0 auto;
+  margin: 5% 0 0 0;
   text-align: center;
 }
 
@@ -343,6 +341,12 @@ div.pause, .play, .dark-light-mode{
   margin: 3%;
   position: relative;
   z-index: -90;
+}
+
+.am-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .am-meDetails{
