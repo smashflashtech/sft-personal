@@ -608,9 +608,9 @@ div.panel.show{
   align-items: center;
 } 
 
-/* LEAFY LEDGER */
+/* LEAFY LEDGER, PetPals */
 
-.llTop{
+.colTop{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -620,12 +620,12 @@ div.panel.show{
   width: 500px;
 }
 
-.llStatic, .llGif{
+.colStatic, .colGif{
   border-radius: 5px;
   width: 500px;
 }
 
-.llStatic{
+.colStatic{
   position: absolute;
   z-index: 80;
 }
