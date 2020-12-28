@@ -434,47 +434,6 @@ div.tech-container{
 
 */
 
-
-
-.left-asddc{
-  margin: 0 0 0 1%;
-  width: 60%;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 3px 3px 5px #00000085;
-}
-
-.asddcPreview{
-  width: 100%;
-  height: 90%;display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.asddcImg{
-  max-width: 95%;
-  max-height: 95%;
-  margin: 5px;
-  align-self: center;
-}
-
-.asddcLabel{
-  width: 100%;
-  height: 10%;
-  font-size: 1.6rem;
-  font-family: 'Unica One', cursive;
-  background-color: black;
-  color: rgb(210, 210, 210);
-  padding: 2px;
-  border-radius: 0 0 5px 5px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} 
-
 .acc-container{
   margin: 5% 0 0 0;
   display: flex;
@@ -543,48 +502,74 @@ div.panel.show{
   text-align: center;
 }
 
-.beerPongContents{
+.pContents{
   display: flex;
-  /* flex-direction: column;
-  justify-content: center; */
 }
 
-.beerPongImages{
-  width: 50%;
+.pContentsCol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.beerPongGif{
+.pStatic, .pGif{
   border-radius: 5px;
-  width: 300px;
+  width:300px;
 }
 
-.beerPongStatic{
-  border-radius: 5px;
+.pStatic{
   position: absolute;
   z-index: 80;
-  border-radius: 5px;
-  width: 300px;
 }
-
-.beerPongStatic:hover{
+.pStatic:hover{
   opacity: 0;
 }
 
-.beerPongDetails{
+/* Panel Left */
+.hoverLabel{
+  font-size: 1rem;
+  width: 32%;
+  color:rgb(150, 150, 150);
+  text-align: center;
+  padding: 1px;
+}
+
+.previewLabel{
+  padding: 5px;
+  width: 68%;
+}
+/* Panel Right */
+.pDescription{
   width: 50%;
-  margin: 0 0 0 18px;
-  /* background-color: rgb(38, 38, 38); */
-  border-radius: 5px;
-  /* border: 10px double black; */
-  padding: 18px;
+  padding: 2% 2% 2% 5%;
+  text-align: left;
   color: rgb(29, 29, 29);
   text-align: left;
   font-size: 1.6rem;
 }
 
-/* NOODLING */
-.beerPong{
-  width: 40%;
+/* BEERPONG */
+.bpRight{
+  width: 50%
+}
+
+.bpStatic, .bpGif{
+  border-radius: 5px 5px 0 0;
+  width:300px;
+}
+
+.bpStatic{
+  position: absolute;
+  z-index: 80;
+}
+.bpStatic:hover{
+  opacity: 0;
+}
+
+.bpLeft{
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -593,11 +578,13 @@ div.panel.show{
   margin: 0 1% 0 0;
   box-shadow: 3px 3px 5px #00000085;
 }
-.bpPreview{
-  width: 100%;
-  height: 90%;display: flex;
+.bpImages{
+  width: 50%;
+  /* height: 90%; */
+  display: flex;
   align-items: center;
   justify-content: space-around;
+  /* padding: 2%; */
 }
 
 .bpImg{
@@ -621,45 +608,93 @@ div.panel.show{
   align-items: center;
 } 
 
-.pContents{
+/* LEAFY LEDGER */
+
+.llTop{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.pContents{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.pStatic, .pGif{
+  align-items: center;
+  justify-content: space-around;
   border-radius: 5px;
-  width:300px;
+  box-shadow: 3px 3px 5px #00000085;
+  width: 500px;
 }
 
-.pStatic{
+.llStatic, .llGif{
+  border-radius: 5px;
+  width: 500px;
+}
+
+.llStatic{
   position: absolute;
   z-index: 80;
 }
-.pStatic:hover{
+.llStatic:hover{
   opacity: 0;
 }
+
+
+/* ASDDC */
+.asddcLeft{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.asddcPreview{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  max-width: 325px;
+  box-shadow: 3px 3px 5px #00000085;
+  border-radius: 5px;
+  margin: 2% 0;
+}
+
+.asddcImg{
+  max-width: 100%;
+  height: 90%;
+  margin: 5px;
+  align-self: center;
+  padding: 1%;
+}
+
+.asddcLabel{
+  width: 100%;
+  height: 10%;
+  font-size: 1.6rem;
+  font-family: 'Unica One', cursive;
+  background-color: black;
+  color: rgb(210, 210, 210);
+  padding: 2px;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Contacts - Body */
 .c-emoji{
@@ -781,9 +816,9 @@ span.credit-text{
     flex-wrap: wrap;
     max-width: 335px;
   }
-  .right-bp, .left-asddc{
+  /* .right-bp, .left-asddc{
     width: 335px;
-  }
+  } */
 }
 
 
