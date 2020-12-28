@@ -92,8 +92,8 @@ const dlMode = () => {
 //   });
 // }
 
-var acc = document.getElementsByClassName("accordion");
-var panel = document.getElementsByClassName('panel');
+const acc = document.getElementsByClassName("accordion");
+const panel = document.getElementsByClassName('panel');
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].onclick = function () {
