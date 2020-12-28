@@ -432,6 +432,10 @@ div.tech-container{
   max-width: 600px;
 }
 
+*/
+
+
+
 .left-asddc{
   margin: 0 0 0 1%;
   width: 60%;
@@ -443,32 +447,21 @@ div.tech-container{
   box-shadow: 3px 3px 5px #00000085;
 }
 
-.right-bp{
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 5px;
-  margin: 0 1% 0 0;
-  box-shadow: 3px 3px 5px #00000085;
-}
-
-.p-preview{
+.asddcPreview{
   width: 100%;
   height: 90%;display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.p-img{
+.asddcImg{
   max-width: 95%;
   max-height: 95%;
   margin: 5px;
   align-self: center;
 }
 
-.p-label{
+.asddcLabel{
   width: 100%;
   height: 10%;
   font-size: 1.6rem;
@@ -480,9 +473,8 @@ div.tech-container{
   display: flex;
   justify-content: space-around;
   align-items: center;
-} */
+} 
 
-/* Style the buttons that are used to open and close the accordion panel */
 .acc-container{
   margin: 5% 0 0 0;
   display: flex;
@@ -506,6 +498,7 @@ div.tech-container{
 
 .uno{
   background-color: rgb(36, 36, 36);
+  border-radius: 5px 5px 0 0;
 }
 .dos{
   background-color: rgb(80, 80, 80);
@@ -515,6 +508,7 @@ div.tech-container{
 }
 .cuatro{
   background-color: rgb(121, 121, 121);
+  border-radius: 0 0 5px 5px;
 }
 
 .numero{
@@ -531,15 +525,133 @@ div.tech-container{
 }
 .active, .accordion:hover {
   background-color: #ccc;
+  color: rgb(34, 34, 34);
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  display: none;
+  width: 65%;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  padding: 18px;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
+  display: none;
+  text-align: center;
 }
 
+.beerPongContents{
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center; */
+}
+
+.beerPongImages{
+  width: 50%;
+}
+
+.beerPongGif{
+  border-radius: 5px;
+  width: 300px;
+}
+
+.beerPongStatic{
+  border-radius: 5px;
+  position: absolute;
+  z-index: 80;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.beerPongStatic:hover{
+  opacity: 0;
+}
+
+.beerPongDetails{
+  width: 50%;
+  margin: 0 0 0 18px;
+  /* background-color: rgb(38, 38, 38); */
+  border-radius: 5px;
+  /* border: 10px double black; */
+  padding: 18px;
+  color: rgb(29, 29, 29);
+  text-align: left;
+  font-size: 1.6rem;
+}
+
+/* NOODLING */
+.right-bp{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  margin: 0 1% 0 0;
+  box-shadow: 3px 3px 5px #00000085;
+}
+.oldBPPreview{
+  width: 100%;
+  height: 90%;display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.oldBPImg{
+  max-width: 95%;
+  max-height: 95%;
+  margin: 5px;
+  align-self: center;
+}
+
+.oldBPLabel{
+  width: 100%;
+  height: 10%;
+  font-size: 1.6rem;
+  font-family: 'Unica One', cursive;
+  background-color: black;
+  color: rgb(210, 210, 210);
+  padding: 2px;
+  border-radius: 0 0 5px 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.pContents{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pStatic, .pGif{
+  border-radius: 5px;
+  width:300px;
+}
+
+.pStatic{
+  position: absolute;
+  z-index: 80;
+}
+.pStatic:hover{
+  opacity: 0;
+}
 
 /* Contacts - Body */
 .c-emoji{
