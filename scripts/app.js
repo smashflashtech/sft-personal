@@ -76,22 +76,6 @@ const dlMode = () => {
 }
 
 // PROJECTS - Accordian
-
-// const acc = document.getElementsByClassName("accordion");
-// for (let i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     let panel = this.nextElementSibling;
-//     if (panel.style.display === "block") {
-//       panel.style.display = "none";
-//       document.getElementById(this.getAttribute('value')).innerHTML='+'
-//     } else {
-//       panel.style.display = "block";
-//       document.getElementById(this.getAttribute('value')).innerHTML='-'
-//     }
-//   });
-// }
-
 const acc = document.getElementsByClassName("accordion");
 const panel = document.getElementsByClassName('panel');
 
