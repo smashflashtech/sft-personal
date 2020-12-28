@@ -464,7 +464,7 @@ div.panel.show{
   font-size: 2.4rem;
 }
 
-.p-label{
+.pLabel{
   align-self: center;
 }
 
@@ -487,29 +487,10 @@ div.panel.show{
   text-align: center;
 }
 
-.pContents{
+/* Flex Row format */
+
+.pContentsRow{
   display: flex;
-}
-
-.pContentsCol{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-}
-
-.pStatic, .pGif{
-  border-radius: 5px;
-  width:300px;
-}
-
-.pStatic{
-  position: absolute;
-  z-index: 80;
-}
-.pStatic:hover{
-  opacity: 0;
 }
 
 /* Panel Left */
@@ -526,13 +507,40 @@ div.panel.show{
   width: 68%;
 }
 /* Panel Right */
-.pDescription{
+
+.pRow{
   width: 50%;
   padding: 2% 2% 2% 5%;
+}
+
+/* Flex Column Format */
+
+.pCol{
+  max-width: 100%;
+  padding: 3%;
+}
+
+.pContentsCol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 0 2% 0;
+}
+
+/* General Description Styles */
+.pDescription{
   text-align: left;
   color: rgb(29, 29, 29);
   text-align: left;
   font-size: 1.6rem;
+  margin: 0;
+}
+
+.pSpace{
+  margin: 1% 0;
+  /* line-height: 4rem; */
 }
 
 /* BEERPONG */
@@ -614,7 +622,7 @@ div.panel.show{
   position: absolute;
   z-index: 80;
 }
-.llStatic:hover{
+.colStatic:hover{
   opacity: 0;
 }
 
@@ -647,6 +655,19 @@ div.panel.show{
   margin: 5px;
   align-self: center;
   padding: 1%;
+}
+
+.asddcStatic, .asddcGif{
+  border-radius: 5px;
+  width:300px;
+}
+
+.asddcStatic{
+  position: absolute;
+  z-index: 80;
+}
+.asddcStatic:hover{
+  opacity: 0;
 }
 
 .asddcLabel{
