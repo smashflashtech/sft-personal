@@ -9,11 +9,11 @@ localStorage.setItem('ld-mode', 'light')
 
 //GRAYSCALE FUNCTIONs
 if (currentGray === null) {
-  document.querySelector('html').style.filter='grayscale(1)'
-  document.getElementById('myRange').value='100'
+  document.querySelector('html').style.filter = 'grayscale(1)'
+  document.getElementById('myRange').value = '100'
 } else if (currentGray !== null) {
-  document.querySelector('html').style.filter=`grayscale(${currentGray})`
-  document.getElementById('myRange').value=`${currentGray*100}`
+  document.querySelector('html').style.filter = `grayscale(${currentGray})`
+  document.getElementById('myRange').value = `${currentGray * 100}`
 }
 
 // Update the current slider value (each time you drag the slider handle)
@@ -77,17 +77,41 @@ const dlMode = () => {
 
 // PROJECTS - Accordian
 
-const acc = document.getElementsByClassName("accordion");
+// const acc = document.getElementsByClassName("accordion");
+// for (let i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     let panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//       document.getElementById(this.getAttribute('value')).innerHTML='+'
+//     } else {
+//       panel.style.display = "block";
+//       document.getElementById(this.getAttribute('value')).innerHTML='-'
+//     }
+//   });
+// }
+
+var acc = document.getElementsByClassName("accordion");
+var panel = document.getElementsByClassName('panel');
+
 for (let i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-      document.getElementById(this.getAttribute('value')).innerHTML='+'
-    } else {
-      panel.style.display = "block";
+  acc[i].onclick = function () {
+    let setClasses = !this.classList.contains('active');
+    setClass(acc, 'active', 'remove');
+    setClass(panel, 'show', 'remove');
+
+    if (setClasses) {
+      this.classList.toggle("active");
+      this.nextElementSibling.classList.toggle("show");
       document.getElementById(this.getAttribute('value')).innerHTML='-'
     }
-  });
+  }
+}
+
+function setClass(els, className, fnName) {
+  for (var i = 0; i < els.length; i++) {
+    els[i].classList[fnName](className);
+    document.getElementById(`plus${i+1}`).innerHTML='+'
+  }
 }
