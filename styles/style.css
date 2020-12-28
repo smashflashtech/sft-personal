@@ -514,19 +514,21 @@ div.tech-container{
   background-color: rgb(103, 103, 103);
 }
 .cuatro{
-  background-color: rgb(150, 150, 150);
+  background-color: rgb(121, 121, 121);
 }
 
-.plus{
+.numero{
   color:rgb(193, 164, 52);
   font-size: 2.4rem;
 }
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.plus{
+  font-size: 3.6rem;
+}
 .active, .accordion:hover {
   background-color: #ccc;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
   background-color: white;
