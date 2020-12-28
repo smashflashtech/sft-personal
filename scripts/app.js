@@ -89,6 +89,9 @@ for (let i = 0; i < acc.length; i++) {
       this.classList.toggle("active");
       this.nextElementSibling.classList.toggle("show");
       document.getElementById(this.getAttribute('value')).innerHTML='-'
+      if (this.getAttribute('value') === 'plus4') {
+        document.getElementById('cuatro').style.borderRadius="0"
+      }
     }
   }
 }
@@ -97,5 +100,6 @@ function setClass(els, className, fnName) {
   for (var i = 0; i < els.length; i++) {
     els[i].classList[fnName](className);
     document.getElementById(`plus${i+1}`).innerHTML='+'
+    document.getElementById('cuatro').style.borderRadius="0 0 5px 5px"
   }
 }
