@@ -938,10 +938,6 @@ div.cContainer{
 .flaticon{
   filter: invert(0);
 }
-/* 
-.credit-container{
-  align-self: flex-end;
-} */
 
 span.creditText{
   color: rgb(210, 210, 210);
@@ -951,11 +947,11 @@ span.creditText{
 
 
 @media screen and (max-width: 1200px){
-  .bpContentsRow{
+  .bpContentsRow, .pContentsRow{
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  div.bpRight.pRow{
+  div.bpRight.pRow, div.bpRight.pRow, .asddcRight{
     width: 100%;
     padding: 3%;
   }
@@ -974,18 +970,8 @@ span.creditText{
   .colTop, .bpLeft{
     width: 400px;
   }
-
   .colStatic, .colGif{
     width: 400px;
-  }
-
-  .pContentsRow{
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  div.bpRight.pRow, .asddcRight{
-    width: 400px;
-    padding: 3%;
   }
   .pCol{
     padding: 0 3%;
@@ -994,10 +980,6 @@ span.creditText{
 
 @media screen and (max-width: 674px) {
   .technologies{
-    max-width: 335px;
-  }
-  .projects-preview{
-    flex-wrap: wrap;
     max-width: 335px;
   }
   .colTop{
