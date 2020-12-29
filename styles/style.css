@@ -845,9 +845,6 @@ span.credit-text{
     width: 400px;
     padding: 3%;
   }
-  /* .bpStatic, .bpGif{
-
-  } */
 
 }
 
@@ -895,6 +892,9 @@ span.credit-text{
   .colStatic, .colGif{
     width: 300px;
   }
+    .bpStatic, .bpGif{
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 415px){
@@ -906,6 +906,9 @@ span.credit-text{
   }
   .asddcLabel{
     font-size:  .8rem;
+  }
+  .bpStatic, .bpGif{
+    width: 200px;
   }
 }
 
