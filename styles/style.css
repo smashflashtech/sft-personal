@@ -951,7 +951,11 @@ span.creditText{
   font-size: 1.6rem;
 }
 
-
+@media screen and (max-height: 1366px){
+  .miscBody{
+    min-height: 1170px;
+  }
+} 
 
 @media screen and (max-width: 1200px){
   .bpContentsRow, .pContentsRow{
