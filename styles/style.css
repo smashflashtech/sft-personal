@@ -325,7 +325,7 @@ div.pause, .play, .darkLightMode{
 }
 
 /* ABOUT - Body */
-.am-meContainer{
+.amMeContainer{
   margin: 5% 0 0 0;
   text-align: center;
 }
@@ -337,7 +337,7 @@ div.pause, .play, .darkLightMode{
   font-weight: bold;
 }
 
-.profile-pic{
+.profilePic{
   width: 50vw;
   max-width: 300px;
   border-radius: 50%;
@@ -347,18 +347,18 @@ div.pause, .play, .darkLightMode{
   z-index: -90;
 }
 
-.am-body{
+.amBody{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.am-meDetails{
+.amMeDetails{
   text-align: left;
   max-width: 1500px;
 }
 
-.am-link{
+.amLink{
   margin: 1% 0;
 }
 
@@ -369,7 +369,7 @@ div.pause, .play, .darkLightMode{
   padding: 15px 15px 0 8%;
 }
 
-div.tech-container{
+div.techContainer{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -395,7 +395,7 @@ div.tech-container{
   border-radius: 5px;
 }
 
-.ti-icon{
+.tiIcon{
   width: 100%;
   height: 75%;
   display: flex;
@@ -403,13 +403,13 @@ div.tech-container{
   align-items: center;
 }
 
-.ti-img{
+.tiImg{
   max-width: 95%;
   max-height: 95%;
   margin: 5px
 }
 
-.ti-label{
+.tiLabel{
   width: 100%;
   height: 25%;
   background-color: black;
