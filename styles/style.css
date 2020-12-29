@@ -813,6 +813,15 @@ span.credit-text{
   font-size: 1.6rem;
 }
 
+@media screen and (max-width: 800px) {
+  .colTop{
+    width: 400px;
+  }
+  .colStatic, .colGif{
+    width: 400px;
+  }
+}
+
 @media screen and (max-width: 674px) {
   .technologies{
     max-width: 335px;
@@ -821,9 +830,12 @@ span.credit-text{
     flex-wrap: wrap;
     max-width: 335px;
   }
-  /* .right-bp, .left-asddc{
-    width: 335px;
-  } */
+  .colTop{
+    width: 300px;
+  }
+  .colStatic, .colGif{
+    width: 300px;
+  }
 }
 
 
@@ -848,6 +860,12 @@ span.credit-text{
   .contactInfo{
     max-width: 250px;
   }  
+  .colTop{
+    width: 300px;
+  }
+  .colStatic, .colGif{
+    width: 300px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -880,5 +898,11 @@ span.credit-text{
     font-size:  2.4rem;
   }  .technologies{
     max-width: 225px;
+  }
+  .colTop{
+    width: 200px;
+  }
+  .colStatic, .colGif{
+    width: 200px;
   }
 }
