@@ -48,7 +48,7 @@ body{
   color: rgb(34, 34, 34);
 }
 
-.last-detail{
+.lastDetail{
   flex-grow: 1;
 }
 
@@ -60,7 +60,7 @@ body{
   font-family: 'Ubuntu', sans-serif;
 }
 
-.bolder-italic{
+.bolderItalic{
   font-weight: bolder;
   font-style: italic;
 }
@@ -111,7 +111,7 @@ header{
   box-shadow: 0px 2px 2px #00000085;
 }
 
-.nav-container{
+.navContainer{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -121,7 +121,7 @@ header{
 
 /* NAVBAR LEFT */
 
-.nav-head{
+.navHead{
   font-family: 'Unica One', cursive;
   font-size: 3.2rem;
   max-width: 240px;
@@ -222,7 +222,7 @@ header{
   align-items: center;
 }
 
-.nav-links{
+.navLinks{
   position: relative;
   z-index: 95;
   text-align: center;
@@ -232,18 +232,18 @@ header{
   display: none;
 }
 
-li.nav-list{
+li.navList{
   margin: 2%;
 }
 
-a.nav-item{
+a.navItem{
   color: white;
   text-decoration: none;
   font-size: 3.6rem;
   font-weight: bold;
 }
 
-a.nav-item:hover{
+a.navItem:hover{
   color:rgb(96, 96, 96);
 }
 
@@ -268,7 +268,7 @@ a.nav-item:hover{
   z-index: 89;
 }
 
-.video-container{
+.videoContainer{
   position: absolute;
   z-index:-95;
   display: flex;
@@ -285,15 +285,15 @@ video {
   z-index:-95;
 }
 
-.video-light{
+.videoLight{
   display: inline-block;
 }
 
-.video-dark{
+.videoDark{
   display: none;
 }
 
-div.control-panel{
+div.controlPanel{
   margin: 0;
   height: 100%;
   display: flex;
@@ -304,21 +304,21 @@ div.control-panel{
   z-index: 80;
 }
 
-div.btn-container{
+div.btnContainer{
   align-self: flex-end;
   display: flex;
   position:relative;
   width: auto;
 }
 
-div.pause, .play, .dark-light-mode{
+div.pause, .play, .darkLightMode{
   /* width: 50%; */
   align-self: flex-end;
   margin: 2%;
 
 }
 
-.play-pic, .pause-pic, .dl-mode-pic{
+.playPic, .pausePic, .dlModePic{
   height: auto;
   width: 50px;
   filter: invert(0);
@@ -1076,7 +1076,7 @@ span.credit-text{
 }
 
 @media screen and (max-width: 320px) {
-  .nav-head{
+  .navHead{
     font-size: 2.4rem;
   }
   .slidecontainer {
