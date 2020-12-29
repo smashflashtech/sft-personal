@@ -909,7 +909,7 @@ div.cContainer{
 }
 
 /* footer */
-.f-footer{
+.fFooter{
   margin: 5% 0 0 0;
   text-align: center;
   background-color: black;
@@ -920,14 +920,14 @@ div.cContainer{
   
 }
 
-.credit-pic{
+.creditPic{
   height:3rem;
   margin: 0 0.8rem;
   filter: invert(1);
 }
 
 
-.those-icons{
+.thoseIcons{
   border-radius: 50%;
 }
 
@@ -938,12 +938,12 @@ div.cContainer{
 .flaticon{
   filter: invert(0);
 }
-
+/* 
 .credit-container{
   align-self: flex-end;
-}
+} */
 
-span.credit-text{
+span.creditText{
   color: rgb(210, 210, 210);
   font-size: 1.6rem;
 }
