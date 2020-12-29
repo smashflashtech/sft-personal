@@ -1009,7 +1009,7 @@ span.creditText{
   .emphasis{
     font-size: 2.4rem;
   }
-  .play-pic, .pause-pic, .dl-mode-pic{
+  .playPic, .pausePic, .dlModePic{
     height: auto;
     width: 40px;
   }
@@ -1079,7 +1079,7 @@ span.creditText{
   .emphasis{
     font-size: 1.6rem;
   }
-  .play-pic, .pause-pic, .dl-mode-pic{
+  .playPic, .pausePic, .dlModePic{
     height: auto;
     width: 30px;
   }
