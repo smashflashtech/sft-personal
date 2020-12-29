@@ -735,10 +735,11 @@ ul.diamond li {
   height: 200px;
   background: #000;
   transform: rotate(45deg);
-  transition: 1s;
+  transition: ease-in 1s;
   margin: -100px;
   overflow: hidden;
   box-shadow: 3px 3px 5px #00000085;
+
 }
 
 ul.diamond li.item1{
@@ -794,12 +795,20 @@ ul.diamond li.item1 div.bg{
   background: url(../images/misc/bg222.png);
   background-size: cover;
   transform: rotate(-45deg) scale(1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgba(255, 255, 255, 0);
 }
 
 ul.diamond li.item3 div.bg, ul.diamond li.item6 div.bg{
   background: url(../images/misc/bg11.png);
   background-size: cover;
   transform: rotate(-45deg) scale(1.45);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgba(255, 255, 255, 0);
 }
 
 ul.diamond li.item5 div.bg, ul.diamond li.item8 div.bg{
@@ -807,14 +816,23 @@ ul.diamond li.item5 div.bg, ul.diamond li.item8 div.bg{
   /* background: url(../images/misc/bg4.jpeg); */
   background-size: cover;
   transform: rotate(-45deg) scale(1.45);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgba(255, 255, 255, 0);
 }
 
 ul.diamond li.item1 div.bg:hover, ul.diamond li.item3 div.bg:hover, ul.diamond li.item6 div.bg:hover, ul.diamond li.item5 div.bg:hover, ul.diamond li.item8 div.bg:hover{
   background: url();
   cursor: pointer;
+  color: white;
+  transition: ease-in .5s;
 }
 
-
+.miscLabel{
+  text-align: center;
+  font-size: 2.4rem;
+}
 
 
 /* Contacts - Body */
