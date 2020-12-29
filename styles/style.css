@@ -716,15 +716,17 @@ div.panel.show{
 } 
 
 /* Misc - Body */
+.mTitle{
+  padding: 3%;
+}
 
 .miscBody{
   width: 100%;
-  min-height:100vh;
+  min-height:100%;
   display: flex;
   display: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
-  padding: 5%;
 }
 
 ul.diamond{
@@ -777,6 +779,12 @@ ul.diamond li.item8{
   right: 25%;
 }
 
+ul.diamond li.item9{
+  top: 125%;
+  left: 25%;
+  opacity: 0;
+}
+
 ul.diamond li .bg{
   width: 100%;
   height: 100%;
@@ -793,7 +801,7 @@ ul.diamond li.item1 div.bg{
   color: rgba(255, 255, 255, 0);
 }
 
-ul.diamond li.item3 div.bg, ul.diamond li.item6 div.bg{
+ul.diamond li.item6 div.bg{
   background: url(../images/misc/bg11.png);
   background-size: cover;
   transform: rotate(-45deg) scale(1.45);
@@ -803,9 +811,8 @@ ul.diamond li.item3 div.bg, ul.diamond li.item6 div.bg{
   color: rgba(255, 255, 255, 0);
 }
 
-ul.diamond li.item5 div.bg, ul.diamond li.item8 div.bg{
+ul.diamond li.item8 div.bg{
   background: url(../images/misc/bg333.png);
-  /* background: url(../images/misc/bg4.jpeg); */
   background-size: cover;
   transform: rotate(-45deg) scale(1.45);
   display: flex;
@@ -814,7 +821,7 @@ ul.diamond li.item5 div.bg, ul.diamond li.item8 div.bg{
   color: rgba(255, 255, 255, 0);
 }
 
-ul.diamond li.item1 div.bg:hover, ul.diamond li.item3 div.bg:hover, ul.diamond li.item6 div.bg:hover, ul.diamond li.item5 div.bg:hover, ul.diamond li.item8 div.bg:hover{
+ul.diamond li.item1 div.bg:hover, ul.diamond li.item6 div.bg:hover, ul.diamond li.item8 div.bg:hover{
   background: url();
   cursor: pointer;
   color: rgb(211, 211, 211);
@@ -896,8 +903,6 @@ div.cContainer{
   font-family: 'Unica One', cursive;
 }
 
-
-
 /* footer */
 .f-footer{
   margin: 5% 0 0 0;
@@ -940,7 +945,6 @@ span.credit-text{
 
 
 
-
 @media screen and (max-width: 1200px){
   .bpContentsRow{
     flex-wrap: wrap;
@@ -951,7 +955,6 @@ span.credit-text{
     padding: 3%;
   }
 }
-
 
 @media screen and (max-width: 938px){
   .asddcLeft, .asddcPreview, .asddcImg{
@@ -1038,6 +1041,18 @@ span.credit-text{
     .bpStatic, .bpGif{
     width: 250px;
   }
+  ul.diamond{
+    width: 100px;
+    height: 450px;
+  }
+  ul.diamond li{
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+  }
+  ul.diamond li.item9{
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 415px){
@@ -1104,5 +1119,14 @@ span.credit-text{
   }
   .cMsg{
     font-size: 1.2rem;
+  }
+  ul.diamond{
+    width: 75px;
+    height: 300px;
+  }
+  ul.diamond li{
+    width: 100px;
+    height: 100px;
+    margin: 6px;
   }
 }
