@@ -514,7 +514,7 @@ div.panel.show{
 
 .pRow{
   width: 50%;
-  padding: 2% 2% 2% 5%;
+  padding: 2% 2% 0% 5%;
 }
 
 /* Flex Column Format */
@@ -544,15 +544,14 @@ div.panel.show{
 
 .pSpace{
   margin: 1% 0;
-  /* line-height: 4rem; */
 }
 
 .projectButtons{
-  padding: 5px 0;
+  flex-grow: 1;
 }
 
 .pBtn{
-  margin: 5px 5px 5px 0px;
+  margin: 10px 5px 5px 0px;
   padding: 5px;
   text-align: center;
 }
@@ -859,7 +858,9 @@ span.credit-text{
     width: 400px;
     padding: 3%;
   }
-
+  .pCol{
+    padding: 0 3%;
+  }
 }
 
 @media screen and (max-width: 674px) {
