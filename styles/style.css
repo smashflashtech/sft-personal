@@ -423,11 +423,17 @@ div.tech-container{
 }
 
 /* Projects - body */
-.acc-container{
-  margin: 5% 0 0 0;
+.pTitle{
+  text-align: center;
+  margin: 3% 0;
+  padding: 0 8%;
+}
+
+.acc-container{ 
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .accordion {
