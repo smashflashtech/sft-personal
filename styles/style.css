@@ -716,22 +716,29 @@ div.panel.show{
 } 
 
 /* Misc - Body */
+
+body.misc{
+  display: flex;
+  flex-direction: column;
+  flex-direction: space-between;
+}
 .mTitle{
   padding: 3%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: relative;
 }
 
 .miscBody{
   width: 100%;
-  min-height:100%;
-  display: flex;
-  display: column;
-  justify-content: space-between;
-  align-items: center;
+  min-height:1000px;
+  position: relative;
 }
 
 ul.diamond{
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%); 
   margin: 0;
@@ -910,14 +917,14 @@ div.cContainer{
 
 /* footer */
 .fFooter{
-  margin: 5% 0 0 0;
+  /* margin: 5% 0 0 0; */
   text-align: center;
   background-color: black;
   height: 8rem;
   padding: 2rem 0;
   filter:invert(0);
   width: 100%;
-  
+  align-self: flex-end;
 }
 
 .creditPic{
@@ -1040,6 +1047,12 @@ span.creditText{
   ul.diamond li.item9{
     opacity: 1;
   }
+  .miscBody{
+    min-height:850px;
+  }
+  ul.diamond{
+    top: 35%;
+  }
 }
 
 @media screen and (max-width: 415px){
@@ -1115,5 +1128,11 @@ span.creditText{
     width: 100px;
     height: 100px;
     margin: 6px;
+  }
+  .miscBody{
+    min-height:625px;
+  }
+  ul.diamond{
+    top: 30%;
   }
 }
