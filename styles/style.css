@@ -874,6 +874,11 @@ div.cContainer{
   display: flex;
   flex-direction: column;
   border-radius: 5px;
+  opacity: .8;
+}
+
+.contact:hover{
+  opacity: 1;
 }
 
 .cIcon{
