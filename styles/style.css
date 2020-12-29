@@ -813,13 +813,42 @@ span.credit-text{
   font-size: 1.6rem;
 }
 
+
+
+
+
+
+
+@media screen and (max-width: 938px){
+  .asddcLeft, .asddcPreview, .asddcImg{
+    width: 300px;
+  }
+  .asddcStatic, .asddcGif{
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 800px) {
-  .colTop{
+  .colTop, .bpLeft{
     width: 400px;
   }
+
   .colStatic, .colGif{
     width: 400px;
   }
+
+  .pContentsRow{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  div.bpRight.pRow, .asddcRight{
+    width: 400px;
+    padding: 3%;
+  }
+  /* .bpStatic, .bpGif{
+
+  } */
+
 }
 
 @media screen and (max-width: 674px) {
@@ -868,6 +897,18 @@ span.credit-text{
   }
 }
 
+@media screen and (max-width: 415px){
+  .asddcLeft, .asddcPreview, .asddcImg{
+    width: 240px;
+  }
+  .asddcStatic, .asddcGif{
+    width: 240px;
+  }
+  .asddcLabel{
+    font-size:  .8rem;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .nav-head{
     font-size: 2.4rem;
@@ -903,6 +944,12 @@ span.credit-text{
     width: 200px;
   }
   .colStatic, .colGif{
+    width: 200px;
+  }
+  .asddcLeft, .asddcPreview, .asddcImg{
+    width: 200px;
+  }
+  .asddcStatic, .asddcGif{
     width: 200px;
   }
 }
