@@ -19,7 +19,7 @@ First and foremost, I would love a job. Hire me! I recently completed General As
 
 
 ### User Stories & Wireframes
-As a user, I want to read information about the website owner, view their work, and find their contact information.
+As a user, I want to read information about the website owner, view their work, and find their contact information. The user will be able to view this portfolio across multiple devices of varying screen sizes.
 
 
 ### Technologies
