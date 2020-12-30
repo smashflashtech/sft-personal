@@ -9,8 +9,8 @@ localStorage.setItem('ld-mode', 'light')
 
 //GRAYSCALE FUNCTIONs
 if (currentGray === null) {
-  document.querySelector('html').style.filter = 'grayscale(1)'
-  document.getElementById('myRange').value = '100'
+  document.querySelector('html').style.filter = 'grayscale(0)'
+  document.getElementById('myRange').value = '0'
 } else if (currentGray !== null) {
   document.querySelector('html').style.filter = `grayscale(${currentGray})`
   document.getElementById('myRange').value = `${currentGray * 100}`
