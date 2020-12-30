@@ -914,6 +914,54 @@ div.cContainer{
   font-size: 1.6rem;
   font-family: 'Unica One', cursive;
 }
+/* modals*/
+.baModal-bg{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba( 0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s; */
+}
+
+.baModal{
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+  width: 25%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 4%;
+  overflow: auto;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+.baTitle{
+  align-self: center;
+}
+.baImg{
+  width: 60%;
+  border-radius: 5px;
+  align-self: center;
+}
+.baDetails{
+  margin: 3px 0;
+}
+.baClose{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+
 
 /* footer */
 .fFooter{
@@ -925,6 +973,8 @@ div.cContainer{
   filter:invert(0);
   width: 100%;
   align-self: flex-end;
+  position: relative;
+  z-index: -96;
 }
 
 .creditPic{
