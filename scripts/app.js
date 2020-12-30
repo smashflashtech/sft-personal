@@ -109,7 +109,6 @@ function setClass(els, className, fnName) {
 //Misc
 
 if (document.querySelector('title').innerHTML === '⚡SmashFlashTech⚡ - Misc.') {
-  console.log('yes we here')
   const baButton = document.getElementById('baButton')
   const baBg = document.getElementById('baModal-bg')
   const baClose = document.getElementById('baClose')
