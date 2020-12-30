@@ -90,9 +90,9 @@ for (let i = 0; i < acc.length; i++) {
     if (setClasses) {
       this.classList.toggle("active");
       this.nextElementSibling.classList.toggle("show");
-      document.getElementById(this.getAttribute('value')).innerHTML='-'
+      document.getElementById(this.getAttribute('value')).innerHTML = '-'
       if (this.getAttribute('id') === 'lastPanel') {
-        document.getElementById('lastPanel').style.borderRadius="0"
+        document.getElementById('lastPanel').style.borderRadius = "0"
       }
     }
   }
@@ -101,39 +101,42 @@ for (let i = 0; i < acc.length; i++) {
 function setClass(els, className, fnName) {
   for (var i = 0; i < els.length; i++) {
     els[i].classList[fnName](className);
-    document.getElementById(`plus${i+1}`).innerHTML='+'
-    document.getElementById('lastPanel').style.borderRadius="0 0 5px 5px"
+    document.getElementById(`plus${i + 1}`).innerHTML = '+'
+    document.getElementById('lastPanel').style.borderRadius = "0 0 5px 5px"
   }
 }
 
 //Misc
-const baButton = document.getElementById('baButton')
-const baBg = document.getElementById('baModal-bg')
-const baClose = document.getElementById('baClose')
-baButton.addEventListener('click', function () {
-  baBg.classList.add('bg-active')
-})
-baClose.addEventListener('click', function () {
-  baBg.classList.remove('bg-active')
-})
 
-const climbButton = document.getElementById('climbButton')
-const climbBg = document.getElementById('climbModal-bg')
-const climbClose = document.getElementById('climbClose')
-climbButton.addEventListener('click', function () {
-  climbBg.classList.add('bg-active')
-})
-climbClose.addEventListener('click', function () {
-  climbBg.classList.remove('bg-active')
-})
+if (document.querySelector('title').innerHTML === '⚡SmashFlashTech⚡ - Misc.') {
+  console.log('yes we here')
+  const baButton = document.getElementById('baButton')
+  const baBg = document.getElementById('baModal-bg')
+  const baClose = document.getElementById('baClose')
+  baButton.addEventListener('click', function () {
+    baBg.classList.add('bg-active')
+  })
+  baClose.addEventListener('click', function () {
+    baBg.classList.remove('bg-active')
+  })
 
-const gasButton = document.getElementById('gasButton')
-const gasBg = document.getElementById('gasModal-bg')
-const gasClose = document.getElementById('gasClose')
-gasButton.addEventListener('click', function () {
-  gasBg.classList.add('bg-active')
-})
-gasClose.addEventListener('click', function () {
-  gasBg.classList.remove('bg-active')
-})
+  const climbButton = document.getElementById('climbButton')
+  const climbBg = document.getElementById('climbModal-bg')
+  const climbClose = document.getElementById('climbClose')
+  climbButton.addEventListener('click', function () {
+    climbBg.classList.add('bg-active')
+  })
+  climbClose.addEventListener('click', function () {
+    climbBg.classList.remove('bg-active')
+  })
 
+  const gasButton = document.getElementById('gasButton')
+  const gasBg = document.getElementById('gasModal-bg')
+  const gasClose = document.getElementById('gasClose')
+  gasButton.addEventListener('click', function () {
+    gasBg.classList.add('bg-active')
+  })
+  gasClose.addEventListener('click', function () {
+    gasBg.classList.remove('bg-active')
+  })
+}
