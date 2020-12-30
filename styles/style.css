@@ -1128,6 +1128,9 @@ span.creditText{
   ul.diamond{
     top: 35%;
   }
+  .miscLabel{
+    font-size: 1.6rem;
+  }
   .modal{
     align-self: flex-end;
     width: 80%;
@@ -1237,7 +1240,7 @@ span.creditText{
     top: 30%;
   }
   .miscLabel{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
   .modal{
     align-self: flex-end;
