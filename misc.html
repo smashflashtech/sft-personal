@@ -49,24 +49,24 @@
     </div>
     <ul class="diamond">
       <li class="item1">
-        <div class="bg">
-          <p class="miscLabel unica" id="baButton">Behavior Analyst</p>
+        <div class="bg"  id="baButton">
+          <p class="miscLabel unica">Behavior Analyst</p>
         </div>
       </li>
       <li class="item2">
         <div class="bg"></div>
       </li>
       <li class="item6">
-        <div class="bg">
-          <p class="miscLabel unica" id="climbButton">Climber</p>
+        <div class="bg" id="climbButton">
+          <p class="miscLabel unica">Climber</p>
         </div>
       </li>
       <li class="item7">
         <div class="bg"></div>
       </li>
       <li class="item8">
-        <div class="bg">
-          <p class="miscLabel unica" id="gasButton">Gastronomer</p>
+        <div class="bg" id="gasButton">
+          <p class="miscLabel unica">Gastronomer</p>
         </div>
       </li>
       <li class="item9">
@@ -75,13 +75,33 @@
     </ul>
   </div>
 <!-- MODALS -->
-<div class="baModal-bg" id="baModal-bg">
-  <div class="baModal" id="baModal">
+<div class="modal-bg" id="baModal-bg">
+  <div class="modal">
       <img class="baImg" src="./images/misc/degrees.jpeg">
-      <h1 class="unica baTitle">Behavior Analyst</h1>
-      <p class="ubuntu baDetails">I went through a period of collecting degrees for fun! Joking aside, I just love learning. In a nutshell, Behavior analysis is a learning theory. <span class="bolderItalic">Learning about learning, meta right?</span></p>
-      <p class="ubuntu baDetails">The most interesting thing about pursuing this avenue is the personal growth I achieved. In addition to logical thinking, data analysis, and systematic decision-making, I learned the importance of behavioral flexibility (how to roll with those punches) and developed fluent compassion for everyone around me.</p>
-      <span class="baClose ubuntu">X</span>
+      <h1 class="unica modalTitle">Behavior Analyst</h1>
+      <p class="ubuntu modalDetails">I went through a period of collecting degrees for fun! Joking aside, I just love learning. In a nutshell, Behavior analysis is a learning theory. <span class="bolderItalic">Learning about learning, meta right?</span></p>
+      <p class="ubuntu modalDetails">The most interesting thing about pursuing this avenue is the personal growth I achieved. In addition to logical thinking, data analysis, and systematic decision-making, I learned the <span class="bolderItalic">importance of behavioral flexibility</span> (how to roll with those punches) and <span class="bolderItalic">developed fluent compassion</span> for everyone around me.</p>
+      <span class="modalClose ubuntu" id="baClose">X</span>
+    </div>
+</div>
+
+<div class="modal-bg" id="climbModal-bg">
+  <div class="modal">
+      <img class="climbImg" src="./images/misc/climb1-crop.png">
+      <h1 class="unica modalTitle">Climber</h1>
+      <p class="ubuntu modalDetails">In my opinion, a little dirt on the skin and rock on your fingertips will do you good (although I’m not above pulling on plastic at the gym). I’m a free-spirit with a lot of ground to cover and most of my traveling revolves around touching real rock.</p>
+      <p class="ubuntu modalDetails">I love that climbing is like solving a puzzle with the tools you have (your body) and is an activity that allows me to continually set goals and challenge myself. Plus in the climbing community, you’re just surrounded by good people.</p>
+      <span class="modalClose ubuntu" id="climbClose">X</span>
+    </div>
+</div>
+
+<div class="modal-bg" id="gasModal-bg">
+  <div class="modal">
+      <img class="gasImg" src="./images/misc/foodcoma.jpeg">
+      <h1 class="unica modalTitle">Gastronomer</h1>
+      <p class="ubuntu modalDetails"><span class="yellow bold">Consumer: </span>I love food. I am an equal opportunity consumer of almost all food. I say almost because I am mildly allergic to some obscure things, but I’ll try to eat it anyway. I triumph 98% of the time.</p>
+      <p class="ubuntu modalDetails"><span class="yellow bold">Cook: </span>My knife cuts suck, but I’ve got soul to share. I’m all about those herbs and spices. Sourdough? Sous vide? Proteins? Vegan? Non-vegan? Desserts? I got you. Gluten-free? I have some ideas! Invite me to your next potluck!</p>
+      <span class="modalClose ubuntu" id="gasClose">X</span>
     </div>
 </div>
 

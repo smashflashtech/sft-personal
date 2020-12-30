@@ -105,3 +105,35 @@ function setClass(els, className, fnName) {
     document.getElementById('lastPanel').style.borderRadius="0 0 5px 5px"
   }
 }
+
+//Misc
+const baButton = document.getElementById('baButton')
+const baBg = document.getElementById('baModal-bg')
+const baClose = document.getElementById('baClose')
+baButton.addEventListener('click', function () {
+  baBg.classList.add('bg-active')
+})
+baClose.addEventListener('click', function () {
+  baBg.classList.remove('bg-active')
+})
+
+const climbButton = document.getElementById('climbButton')
+const climbBg = document.getElementById('climbModal-bg')
+const climbClose = document.getElementById('climbClose')
+climbButton.addEventListener('click', function () {
+  climbBg.classList.add('bg-active')
+})
+climbClose.addEventListener('click', function () {
+  climbBg.classList.remove('bg-active')
+})
+
+const gasButton = document.getElementById('gasButton')
+const gasBg = document.getElementById('gasModal-bg')
+const gasClose = document.getElementById('gasClose')
+gasButton.addEventListener('click', function () {
+  gasBg.classList.add('bg-active')
+})
+gasClose.addEventListener('click', function () {
+  gasBg.classList.remove('bg-active')
+})
+
