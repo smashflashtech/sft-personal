@@ -963,6 +963,7 @@ div.cContainer{
 
 .baImg{
   width: 60%;
+  height: auto;
   border-radius: 5px;
   align-self: center;
 }
