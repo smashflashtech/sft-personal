@@ -58,9 +58,9 @@ const dlMode = () => {
     document.getElementById('pause-p').style.filter = 'invert(1)'
     document.getElementById('dl-m-p').style.filter = 'invert(1)'
     document.getElementById('footer').style.filter = 'invert(1)'
-    document.querySelector('body').style.color = 'rgb(210, 210, 210)'
     document.getElementById('engineer').style.color = 'rgb(210, 210, 210)'
-    document.querySelector('body').style.backgroundColor = 'black'
+    document.querySelector('body').style.color = 'rgb(210, 210, 210)'
+    document.querySelector('body').style.backgroundColor = 'rgb(0, 0, 0)'
     mode = 'dark'
   } else if (current === 'dark') {
     vDark.style.display = 'none'
