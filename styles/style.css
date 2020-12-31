@@ -65,6 +65,10 @@ body{
   color: rgb(177, 177, 177);
 }
 
+.gray{
+  color: rgb(142, 142, 142);
+}
+
 .bolderItalic{
   font-weight: bolder;
   font-style: italic;
