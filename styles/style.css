@@ -1099,6 +1099,13 @@ span.creditText{
     width: 80%;
     height: 60%;
   }
+  .wishlist{
+    flex-direction: column;
+    align-items: center;
+  }
+  .wl{
+    width:200px;
+  }
 }
 
 @media screen and (max-width: 674px) {
