@@ -229,7 +229,7 @@ header{
   z-index: 90;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; 
 }
 
 .navLinks{
