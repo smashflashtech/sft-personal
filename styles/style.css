@@ -239,6 +239,7 @@ header{
   width: 50vw;
   font-family: 'Ubuntu', sans-serif;
   text-decoration: none;
+  list-style-type: none;
   display: none;
 }
 
@@ -632,7 +633,7 @@ div.panel.show{
   align-self: center;
 }
 
-.pLabel{
+.ppLabel{
   width: 100%;
   height: 10%;
   font-size: 1.6rem;
