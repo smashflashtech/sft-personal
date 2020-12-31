@@ -60,6 +60,11 @@ body{
   font-family: 'Ubuntu', sans-serif;
 }
 
+.italicGray{
+  font-style: italic;
+  color: rgb(177, 177, 177);
+}
+
 .bolderItalic{
   font-weight: bolder;
   font-style: italic;
@@ -466,6 +471,10 @@ div.panel.show{
 }
 .cuatro{
   background-color: rgb(121, 121, 121);
+}
+
+.cinco{
+  background-color: rgb(147, 147, 147);
   border-radius: 0 0 5px 5px;
 }
 
@@ -632,7 +641,7 @@ div.panel.show{
   align-items: center;
 } 
 
-/* LEAFY LEDGER, PetPals */
+/* LEAFY LEDGER, PetPals, SFT */
 
 .colTop{
   display: flex;
@@ -657,6 +666,27 @@ div.panel.show{
   opacity: 0;
 }
 
+/* SFT */
+.wishlist{
+  display: flex;
+  justify-content: space-around;
+  padding: 2% 5% 2% 1%;
+}
+
+.single-before {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.single-before li {
+  padding-left: 1rem;
+  text-indent: -0.7rem;
+}
+
+.single-before li::before {
+  content: "✔";
+}
 
 /* ASDDC */
 .asddcLeft{
