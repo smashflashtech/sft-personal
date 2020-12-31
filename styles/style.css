@@ -69,6 +69,7 @@ body{
   color: rgb(142, 142, 142);
 }
 
+
 .bolderItalic{
   font-weight: bolder;
   font-style: italic;
@@ -1042,6 +1043,11 @@ div.cContainer{
 
 .flaticon{
   filter: invert(0);
+}
+
+.bitmoji{
+  filter: invert(0);
+  border-radius: 5px;
 }
 
 span.creditText{
