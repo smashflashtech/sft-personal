@@ -4,7 +4,6 @@ const vDark = document.getElementById('v-dark')
 const vLight = document.getElementById('v-light')
 const slider = document.getElementById("myRange");
 const currentGray = localStorage.getItem('grayscale')
-// localStorage.setItem('ld-mode', 'light')
 let mode = 'light'
 
 //GRAYSCALE FUNCTIONs
@@ -51,7 +50,6 @@ const pauseVideo = () => {
 }
 //DARK/LIGHT INVERT FUNCTION
 const dlMode = () => {
-  // let current = localStorage.getItem('ld-mode')
   let current = mode
   if (current === 'light') {
     vLight.style.display = "none"
@@ -63,7 +61,6 @@ const dlMode = () => {
     document.querySelector('body').style.color = 'rgb(210, 210, 210)'
     document.getElementById('engineer').style.color = 'rgb(210, 210, 210)'
     document.querySelector('body').style.backgroundColor = 'black'
-    // localStorage.setItem('ld-mode', 'dark')
     mode = 'dark'
   } else if (current === 'dark') {
     vDark.style.display = 'none'
@@ -75,7 +72,6 @@ const dlMode = () => {
     document.getElementById('engineer').style.color = 'rgb(55, 55, 55)'
     document.querySelector('body').style.color = 'rgb(55, 55, 55)'
     document.querySelector('body').style.backgroundColor = 'rgb(237, 237, 237)'
-    // localStorage.setItem('ld-mode', 'light')
     mode = 'light'
   }
 }
