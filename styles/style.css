@@ -655,7 +655,6 @@ div.panel.show{
   justify-content: space-around;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #00000085;
-  width: 500px;
 }
 
 .colStatic, .colGif{
@@ -663,15 +662,20 @@ div.panel.show{
   width: 500px;
 }
 
-.colStatic{
+.colStatic, .sftStatic{
   position: absolute;
   z-index: 80;
 }
-.colStatic:hover{
+.colStatic:hover, .sftStatic:hover{
   opacity: 0;
 }
 
 /* SFT */
+
+.sftStatic, .sftGif{
+  border-radius: 5px;
+}
+
 .wishlist{
   display: flex;
   justify-content: space-around;
@@ -1086,7 +1090,7 @@ span.creditText{
 }
 
 @media screen and (max-width: 800px) {
-  .colTop, .bpLeft{
+  .bpLeft{
     width: 400px;
   }
   .colStatic, .colGif{
@@ -1112,10 +1116,7 @@ span.creditText{
   .technologies{
     max-width: 335px;
   }
-  .colTop{
-    width: 300px;
-  }
-  .colStatic, .colGif{
+  .colStatic, .colGif, .sftStatic, .sftGif{
     width: 300px;
   }
   .engineer{
@@ -1149,12 +1150,6 @@ span.creditText{
   .contactInfo{
     max-width: 250px;
   }  
-  .colTop{
-    width: 300px;
-  }
-  .colStatic, .colGif{
-    width: 300px;
-  }
     .bpStatic, .bpGif{
     width: 250px;
   }
@@ -1212,6 +1207,9 @@ span.creditText{
     width: 100%;
     height: 85%;
   }
+  .colStatic, .colGif, .sftStatic, .sftGif{
+    width: 200px;
+  }
 }
 @media screen and (max-width: 360px){
   .modal{
@@ -1253,10 +1251,7 @@ span.creditText{
   }  .technologies{
     max-width: 225px;
   }
-  .colTop{
-    width: 200px;
-  }
-  .colStatic, .colGif{
+  .colStatic, .colGif, .sftStatic, .sftGif{
     width: 200px;
   }
   .asddcLeft, .asddcPreview, .asddcImg{
