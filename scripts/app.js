@@ -59,8 +59,8 @@ const dlMode = () => {
     document.getElementById('dl-m-p').style.filter = 'invert(1)'
     document.getElementById('footer').style.filter = 'invert(1)'
     document.getElementById('engineer').style.color = 'rgb(210, 210, 210)'
+    document.getElementById('dDiv').style.setProperty('background', '#000000')
     document.querySelector('body').style.color = 'rgb(210, 210, 210)'
-    document.querySelector('body').style.setProperty('background', '#000000')
     mode = 'dark'
   } else if (current === 'dark') {
     vDark.style.display = 'none'
@@ -70,8 +70,8 @@ const dlMode = () => {
     document.getElementById('dl-m-p').style.filter = 'invert(0)'
     document.getElementById('footer').style.filter = 'invert(0)'
     document.getElementById('engineer').style.color = 'rgb(55, 55, 55)'
+    document.getElementById('dDiv').style.setProperty('background', '#ededed')
     document.querySelector('body').style.color = 'rgb(55, 55, 55)'
-    document.querySelector('body').style.setProperty('background', '#ededed')
 
     mode = 'light'
   }

@@ -31,6 +31,13 @@ body{
   color: rgb(34, 34, 34);
 }
 
+.darkDiv{
+  background-color:  rgb(237, 237, 237);
+  position: relative;
+  z-index:-98;
+  height: 100%;
+}
+
 .pad1{
   padding: 1% 0;
 }

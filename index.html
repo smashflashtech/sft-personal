@@ -12,88 +12,90 @@
 </head>
 
 <body>
-
-  <header>
-    <div class="navContainer">
-      <div class="navLeft">
-        <ul>
-          <li class="navHead">smash flash tech</li>
-          <li class="unica">
-            <div class="slidecontainer">
-              <input type="range" min="0" max="100" value="100" class="slider" id="myRange"><span class="addcolor"> go monochrome</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-right">
-        <div class="hamburger" id="ham" onclick="toggleHamburger(this)" value="closed">
-          <div class="bar1" id="b1"></div>
-          <div class="bar2" id="b2"></div>
-          <div class="bar3" id="b3"></div>
-        </div>
-        <nav id="nav">
-          <ul class="navLinks" id="nlinks">
-            <li class="navList"><a class="navItem" href="./index.html">Home</a></li>
-            <li class="navList"><a class="navItem" href="./about.html">About</a></li>
-            <!-- <li class="navList"><a class="navItem" href="./blog/main.html">Blog</a></li> -->
-            <li class="navList"><a class="navItem" href="./projects.html">Projects</a></li>
-            <li class="navList"><a class="navItem" href="./misc.html">Misc.</a></li>
-            <li class="navList"><a class="navItem" href="./contact.html">Contact</a></li>
+  <div class="darkDiv" id="dDiv">
+    <header>
+      <div class="navContainer">
+        <div class="navLeft">
+          <ul>
+            <li class="navHead">smash flash tech</li>
+            <li class="unica">
+              <div class="slidecontainer">
+                <input type="range" min="0" max="100" value="100" class="slider" id="myRange"><span class="addcolor"> go
+                  monochrome</span>
+              </div>
+            </li>
           </ul>
-        </nav>
+        </div>
+        <div class="nav-right">
+          <div class="hamburger" id="ham" onclick="toggleHamburger(this)" value="closed">
+            <div class="bar1" id="b1"></div>
+            <div class="bar2" id="b2"></div>
+            <div class="bar3" id="b3"></div>
+          </div>
+          <nav id="nav">
+            <ul class="navLinks" id="nlinks">
+              <li class="navList"><a class="navItem" href="./index.html">Home</a></li>
+              <li class="navList"><a class="navItem" href="./about.html">About</a></li>
+              <!-- <li class="navList"><a class="navItem" href="./blog/main.html">Blog</a></li> -->
+              <li class="navList"><a class="navItem" href="./projects.html">Projects</a></li>
+              <li class="navList"><a class="navItem" href="./misc.html">Misc.</a></li>
+              <li class="navList"><a class="navItem" href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <div class="welcome ubuntu">Hello, I am <span class="name" id="n">Ashley Nguyen</span>.
-    <p class="ubuntu engineer" id="engineer">I'm a Full-Stack Engineer.</p>
-  </div>
-      
-  <div class="videoContainer">
-    <video id="v-light" class="videoLight" playsinline autoplay muted loop>
-      <source src="video/pendulum-light.mp4" type="video/mp4" value="light">
-    </video>
-    <video id="v-dark" class="videoDark" playsinline autoplay muted loop>
-      <source src="video/pendulum-dark.mp4" type="video/mp4" value="dark">
-    </video>
-    <div class="controlPanel">
-      <div class="btnContainer">
-        <div id="pause" class="pause"><img id="pause-p" class="pausePic" onclick="pauseVideo()"
-            src="images/thoseicons-pause.png" alt="pause"></div>
-        <div id="play" class="play"><img id="play-p" class="playPic" onclick="playVideo()"
-            src="images/thoseicons-play-button.png" alt="play"></div>
-        <div id="dl-mode" class="darkLightMode"><img id="dl-m-p" class="dlModePic" onclick="dlMode()"
-            src="images/freepik-lightbulb.png" alt="dark mode/light mode toggle"></div>
-      </div>
+    <div class="welcome ubuntu">Hello, I am <span class="name" id="n">Ashley Nguyen</span>.
+      <p class="ubuntu engineer" id="engineer">I'm a Full-Stack Engineer.</p>
     </div>
 
-    <p class="ubuntu details pad1">I very much subscribe to <span class="unica emphasis yellow" id="i">intertia</span>.
-      <span class="bolderItalic">What’s in motion: stays in motion.</span> I work hard
-      and am a
-      juggernaut once I get going. I also play hard because, well, you only live once. But we mustn’t forget: <span
-        class="bolderItalic">What
-        isn’t in motion: remains out of motion.</span> I know the value of relaxing adequately, too. Best you know,
-      there are
-      a few ashley-shaped grooves worn in a few mattresses, couches, and armchairs.
-    </p>
-    <p class="ubuntu details pad1 lastDetail">Learn more about me and what I do <a class="unica emphasis" id="h"
-        href="./about.html">here</a>.</p>
+    <div class="videoContainer">
+      <video id="v-light" class="videoLight" playsinline autoplay muted loop>
+        <source src="video/pendulum-light.mp4" type="video/mp4" value="light">
+      </video>
+      <video id="v-dark" class="videoDark" playsinline autoplay muted loop>
+        <source src="video/pendulum-dark.mp4" type="video/mp4" value="dark">
+      </video>
+      <div class="controlPanel">
+        <div class="btnContainer">
+          <div id="pause" class="pause"><img id="pause-p" class="pausePic" onclick="pauseVideo()"
+              src="images/thoseicons-pause.png" alt="pause"></div>
+          <div id="play" class="play"><img id="play-p" class="playPic" onclick="playVideo()"
+              src="images/thoseicons-play-button.png" alt="play"></div>
+          <div id="dl-mode" class="darkLightMode"><img id="dl-m-p" class="dlModePic" onclick="dlMode()"
+              src="images/freepik-lightbulb.png" alt="dark mode/light mode toggle"></div>
+        </div>
+      </div>
+
+      <p class="ubuntu details pad1">I very much subscribe to <span class="unica emphasis yellow"
+          id="i">intertia</span>.
+        <span class="bolderItalic">What’s in motion: stays in motion.</span> I work hard
+        and am a
+        juggernaut once I get going. I also play hard because, well, you only live once. But we mustn’t forget: <span
+          class="bolderItalic">What
+          isn’t in motion: remains out of motion.</span> I know the value of relaxing adequately, too. Best you know,
+        there are
+        a few ashley-shaped grooves worn in a few mattresses, couches, and armchairs.
+      </p>
+      <p class="ubuntu details pad1 lastDetail">Learn more about me and what I do <a class="unica emphasis" id="h"
+          href="./about.html">here</a>.</p>
 
 
-        <p class="fFooter" id="footer">
-          <span class="creditText ubuntu">special thanks</span><br /><br />
-          <a
-        href="https://www.bitmoji.com" target="_blank" rel="noopener noreferrer"><img class="creditPic bitmoji"
-          id="bitmoji" src="images/credit/bitmoji.png" alt="bitmoji.com"></a><a href="https://www.flaticon.com/free-icon/pause_2088562" target="_blank" rel="noopener noreferrer"><img class="creditPic thoseIcons"
-              src="images/credit/those-icons-logo.jpg" alt="those icons"></a><a
-            href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener noreferrer"><img class="creditPic freepik" id="freepik"
-              src="images/credit/freepik-logo-color.png" alt="freepik"></a><a href="https://www.flaticon.com/"
-            target="_blank" rel="noopener noreferrer"><img class="creditPic flaticon" id="flaticon" src="images/credit/flaticon-logo-color.png"
-              alt="flaticon.com"></a>
-        </p>
+      <p class="fFooter" id="footer">
+        <span class="creditText ubuntu">special thanks</span><br /><br />
+        <a href="https://www.bitmoji.com" target="_blank" rel="noopener noreferrer"><img class="creditPic bitmoji"
+            id="bitmoji" src="images/credit/bitmoji.png" alt="bitmoji.com"></a><a
+          href="https://www.flaticon.com/free-icon/pause_2088562" target="_blank" rel="noopener noreferrer"><img
+            class="creditPic thoseIcons" src="images/credit/those-icons-logo.jpg" alt="those icons"></a><a
+          href="https://www.flaticon.com/authors/freepik" target="_blank" rel="noopener noreferrer"><img
+            class="creditPic freepik" id="freepik" src="images/credit/freepik-logo-color.png" alt="freepik"></a><a
+          href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer"><img class="creditPic flaticon"
+            id="flaticon" src="images/credit/flaticon-logo-color.png" alt="flaticon.com"></a>
+      </p>
+    </div>
+
   </div>
-
-
 </body>
 
 
