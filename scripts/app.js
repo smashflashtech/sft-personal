@@ -69,6 +69,7 @@ const dlMode = () => {
     modeBtn.style.filter = 'invert(1)'
     footer.style.filter = 'invert(1)'
     engineer.style.color = 'rgb(210, 210, 210)'
+    body.style.setProperty('background', 'rgb(0, 0, 0)')
     darkDiv.style.setProperty('background', 'rgb(0, 0, 0)')
     controls.style.setProperty('background', 'rgb(0, 0, 0)')
     detail.style.setProperty('background', 'rgb(0, 0, 0)')
@@ -83,6 +84,7 @@ const dlMode = () => {
     modeBtn.style.filter = 'invert(0)'
     footer.style.filter = 'invert(0)'
     engineer.style.color = 'rgb(55, 55, 55)'
+    body.style.setProperty('background', 'rgb(237, 237, 237)')
     darkDiv.style.setProperty('background', 'rgb(237, 237, 237)')
     controls.style.setProperty('background', 'rgb(237, 237, 237)')
     detail.style.setProperty('background', 'rgb(237, 237, 237)')
