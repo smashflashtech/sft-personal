@@ -652,13 +652,14 @@ div.panel.show{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 } 
 
 .hover{
   display: inline;
 }
 
-.tap{
+.click{
   display: none;
 }
 
@@ -1101,7 +1102,7 @@ span.creditText{
   .hover{
     display: none;
   }
-  .tap{
+  .click{
     display: inline;
   }
 }
