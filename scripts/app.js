@@ -57,6 +57,7 @@ const dlMode = () => {
   const footer = document.getElementById('footer')
   const engineer = document.getElementById('engineer')
   const darkDiv = document.getElementById('dDiv')
+  const detail = document.getElementById('detail')
   const gap = document.getElementById('last')
   const body = document.querySelector('body')
   if (current === 'light') {
@@ -67,8 +68,9 @@ const dlMode = () => {
     modeBtn.style.filter = 'invert(1)'
     footer.style.filter = 'invert(1)'
     engineer.style.color = 'rgb(210, 210, 210)'
-    darkDiv.style.setProperty('background', '#000000')
-    gap.style.setProperty('background', '#000000')
+    darkDiv.style.setProperty('background', 'rgb(0, 0, 0)')
+    detail.style.setProperty('background', 'rgb(0, 0, 0)')
+    gap.style.setProperty('background', 'rgb(0, 0, 0)')
     body.style.color = 'rgb(210, 210, 210)'
     mode = 'dark'
   } else if (current === 'dark') {
@@ -79,8 +81,9 @@ const dlMode = () => {
     modeBtn.style.filter = 'invert(0)'
     footer.style.filter = 'invert(0)'
     engineer.style.color = 'rgb(55, 55, 55)'
-    darkDiv.style.setProperty('background', '#ededed')
-    gap.style.setProperty('background', '#ededed')
+    darkDiv.style.setProperty('background', 'rgb(237, 237, 237)')
+    detail.style.setProperty('background', 'rgb(237, 237, 237)')
+    gap.style.setProperty('background', 'rgb(237, 237, 237)')
     body.style.color = 'rgb(55, 55, 55)'
     mode = 'light'
   }
