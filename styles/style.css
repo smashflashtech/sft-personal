@@ -29,13 +29,16 @@ body{
   z-index:-99;
   height: 100vh;
   color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: column;
 }
 
 .darkDiv{
   background-color:  rgb(237, 237, 237);
   position: relative;
   z-index:-98;
-  height: 100%;
+  height: 100vh;
+  flex-grow: 1;
 }
 
 .pad1{
