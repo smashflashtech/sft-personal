@@ -57,9 +57,6 @@ const dlMode = () => {
   const footer = document.getElementById('footer')
   const engineer = document.getElementById('engineer')
   const darkDiv = document.getElementById('dDiv')
-  const controls = document.getElementById('controls')
-  const detail = document.getElementById('detail')
-  const gap = document.getElementById('last')
   const body = document.querySelector('body')
   if (current === 'light') {
     vLight.style.display = "none"
@@ -71,9 +68,6 @@ const dlMode = () => {
     engineer.style.color = 'rgb(210, 210, 210)'
     body.style.setProperty('background', 'rgb(0, 0, 0)')
     darkDiv.style.setProperty('background', 'rgb(0, 0, 0)')
-    controls.style.setProperty('background', 'rgb(0, 0, 0)')
-    detail.style.setProperty('background', 'rgb(0, 0, 0)')
-    gap.style.setProperty('background', 'rgb(0, 0, 0)')
     body.style.color = 'rgb(210, 210, 210)'
     mode = 'dark'
   } else if (current === 'dark') {
@@ -86,9 +80,6 @@ const dlMode = () => {
     engineer.style.color = 'rgb(55, 55, 55)'
     body.style.setProperty('background', 'rgb(237, 237, 237)')
     darkDiv.style.setProperty('background', 'rgb(237, 237, 237)')
-    controls.style.setProperty('background', 'rgb(237, 237, 237)')
-    detail.style.setProperty('background', 'rgb(237, 237, 237)')
-    gap.style.setProperty('background', 'rgb(237, 237, 237)')
     body.style.color = 'rgb(55, 55, 55)'
     mode = 'light'
   }
