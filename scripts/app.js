@@ -51,30 +51,37 @@ const pauseVideo = () => {
 //DARK/LIGHT INVERT FUNCTION
 const dlMode = () => {
   let current = mode
+  const playBtn = document.getElementById('play-p')
+  const pauseBtn = document.getElementById('pause-p')
+  const modeBtn = document.getElementById('dl-m-p')
+  const footer = document.getElementById('footer')
+  const engineer = document.getElementById('engineer')
+  const darkDiv = document.getElementById('dDiv')
+  const gap = document.getElementById('last')
+  const body = document.querySelector('body')
   if (current === 'light') {
     vLight.style.display = "none"
     vDark.style.display = "inline-block"
-    document.getElementById('play-p').style.filter = 'invert(1)'
-    document.getElementById('pause-p').style.filter = 'invert(1)'
-    document.getElementById('dl-m-p').style.filter = 'invert(1)'
-    document.getElementById('footer').style.filter = 'invert(1)'
-    document.getElementById('engineer').style.color = 'rgb(210, 210, 210)'
-    document.getElementById('dDiv').style.setProperty('background', '#000000')
-    document.getElementById('last').style.setProperty('background', '#000000')
-    document.querySelector('body').style.color = 'rgb(210, 210, 210)'
+    playBtn.style.filter = 'invert(1)'
+    pauseBtn.style.filter = 'invert(1)'
+    modeBtn.style.filter = 'invert(1)'
+    footer.style.filter = 'invert(1)'
+    engineer.style.color = 'rgb(210, 210, 210)'
+    darkDiv.style.setProperty('background', '#000000')
+    gap.style.setProperty('background', '#000000')
+    body.style.color = 'rgb(210, 210, 210)'
     mode = 'dark'
   } else if (current === 'dark') {
     vDark.style.display = 'none'
     vLight.style.display = 'inline-block'
-    document.getElementById('play-p').style.filter = 'invert(0)'
-    document.getElementById('pause-p').style.filter = 'invert(0)'
-    document.getElementById('dl-m-p').style.filter = 'invert(0)'
-    document.getElementById('footer').style.filter = 'invert(0)'
-    document.getElementById('engineer').style.color = 'rgb(55, 55, 55)'
-    document.getElementById('dDiv').style.setProperty('background', '#ededed')
-    document.getElementById('last').style.setProperty('background', '#ededed')
-    document.querySelector('body').style.color = 'rgb(55, 55, 55)'
-
+    playBtn.style.filter = 'invert(0)'
+    pauseBtn.style.filter = 'invert(0)'
+    modeBtn.style.filter = 'invert(0)'
+    footer.style.filter = 'invert(0)'
+    engineer.style.color = 'rgb(55, 55, 55)'
+    darkDiv.style.setProperty('background', '#ededed')
+    gap.style.setProperty('background', '#ededed')
+    body.style.color = 'rgb(55, 55, 55)'
     mode = 'light'
   }
 }
