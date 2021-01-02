@@ -76,6 +76,9 @@ body{
   color: rgb(142, 142, 142);
 }
 
+.lightGray{
+  color: rgb(189, 189, 189);
+}
 
 .bolderItalic{
   font-weight: bolder;
@@ -473,21 +476,23 @@ div.panel.show{
 }
 
 .uno{
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(20, 20, 20);
   border-radius: 5px 5px 0 0;
 }
 .dos{
-  background-color: rgb(80, 80, 80);
+  background-color: rgb(60, 60, 60);
 }
 .tres{
-  background-color: rgb(103, 103, 103);
+  background-color: rgb(80, 80, 80);
 }
 .cuatro{
-  background-color: rgb(121, 121, 121);
+  background-color: rgb(100, 100, 100);
 }
-
 .cinco{
-  background-color: rgb(147, 147, 147);
+  background-color: rgb(120, 120, 120);
+}
+.seis{
+  background-color: rgb(140, 140, 140);
   border-radius: 0 0 5px 5px;
 }
 
