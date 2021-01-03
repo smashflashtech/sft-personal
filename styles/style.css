@@ -35,7 +35,7 @@ body{
   background-color:  rgb(237, 237, 237);
   position: relative;
   z-index:-98;
-  height: 100%;
+  height: 100vh;
 }
 
 .pad1{
