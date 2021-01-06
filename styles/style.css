@@ -80,6 +80,10 @@ body{
   color: rgb(189, 189, 189);
 }
 
+.italic{
+  font-style: italic;
+}
+
 .bolderItalic{
   font-weight: bolder;
   font-style: italic;
@@ -580,7 +584,12 @@ div.panel.show{
 }
 
 .pSpace{
-  margin: 1% 0;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.pSpace2{
+  margin: 16px 0;
   line-height: 1.6;
 }
 
